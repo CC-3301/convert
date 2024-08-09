@@ -14,7 +14,7 @@ import (
 
 func SaveSingRuleSet(rules []option.DefaultHeadlessRule, outputPath string) error {
 	plainRuleSet := option.PlainRuleSetCompat{
-		Version: 1,
+		Version: 2,
 		Options: option.PlainRuleSet{
 			Rules: common.Map(rules, func(it option.DefaultHeadlessRule) option.HeadlessRule {
 				return option.HeadlessRule{
